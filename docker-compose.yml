@@ -6,15 +6,7 @@ services:
     build:
         context: .
     volumes:
-      - ./assets:/vue/assets
       - ./components:/vue/components
-      - ./layouts:/vue/layouts
-      - ./middleware:/vue/middleware
-      - ./pages:/vue/pages
-      - ./plugins:/vue/plugins
-      - ./static:/vue/static
-      - ./store:/vue/store
-      - ./nuxt.config.js:/vue/nuxt.config.js
     ports:
       - "3500:3000"
     command: ["npm", "run", "dev"]

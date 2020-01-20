@@ -37,3 +37,6 @@ ENV HOST=0.0.0.0
 
 # Het commando waarmee het project in productiemodus draait
 CMD ["npm", "run", "run"]
+
+# Build docker build -t nuxt-docker .
+# Start deze build met $ docker run -p 3500:3000 nuxt-docker
